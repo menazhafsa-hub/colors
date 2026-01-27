@@ -278,16 +278,12 @@ main {
 /* You can alter colours, fonts, sizing, or layout for .card-front and .card-back below. */
 
 /* Styles for the front side of the card. */
-.card-front {
-	color: #11222d;
+.card-background {
+	color: #d20000;
 	/* Additional styles here (e.g., background-color: #bbccdd;) */
 }
 
 /* Add styles for additional elements on the front side here. Here is an example: */
-
-#card-front-word {
-	font-size: 200%;
-}
 
 /* Styles for the back side of the card. */
 .card-back {
@@ -303,20 +299,35 @@ main {
 
 #card-back-pos {
 	padding: 1px 3px;
-	color: #777;
+	color: hsl(0, 0%, 98%);
 	border: 1px solid #777;
 	border-radius: 2px;
 	font-size: 90%;
 }
 
-#card-back-image {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
+#card-back-word {
+	font-size: 300%;
+    color: #d20000;       
 }
 
 #card-back-audio {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
+}
+
+#card-back-Chinese-translation {
+	font-size: 200%;
+    color: #a60505;  
+}
+
+#card-back-Chinese-transliteration {
+	font-size: 150%;
+    color: #cf1919;  
+}
+
+#card-back-example-sentence {
+	font-size: 200%;
+    color: #0f0d0d;  
 }
 
 #card-back-video {

@@ -91,18 +91,20 @@ function renderCard() {
 	// If there are more columns in the dataset (e.g., synonyms, example sentences),
 	// display them here (e.g., document.getElementById("card-synonym").textContent = currentCard.synonym).
 
-	// Reset flashcard to the front side
-	document.getElementById("card-inner").dataset.side = "front";
+		// Reset flashcard to the front side
+		document.getElementById("card-inner").dataset.side = "front";
 
-	// Update the front side with the current card's word
-	const currentCard = cards[currentIndex];
-	document.getElementById("card-front-word").textContent = currentCard.word;
+		// Update the front side with the current card's word and image
+		const currentCard = cards[currentIndex];
+		document.getElementById("card-front-image").src = `res/${currentCard["Main Word"]}.jpg`;
+		document.getElementById("card-back-image").src = currentCard.image;
+		// If you want to show the word on the front, add an element with id="card-front-word" in the HTML and uncomment the next line:
+		// document.getElementById("card-front-word").textContent = currentCard.word;
 
 	// Wait for the back side to become invisible before updating the content on the back side
 	setTimeout(() => {
 		document.getElementById("card-back-pos").textContent = posMapping[currentCard.pos] ?? currentCard.pos;
 		document.getElementById("card-back-definition").textContent = currentCard.definition;
-		document.getElementById("card-back-image").src = currentCard.image;
 		document.getElementById("card-back-audio").src = currentCard.audio;
 		document.getElementById("card-back-video").src = currentCard.video;
 	}, transitionHalfDuration);

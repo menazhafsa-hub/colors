@@ -1,11 +1,31 @@
-id,word,pos,definition,image,audio,video
-1,hello,n,A phrase used for greeting someone.,./res/hello.png,./res/hello.wav,
-2,world,n,"The earth, together with all of its countries and peoples.",,./res/world.wav,
-3,multimedia,adj,Using more than one medium of expression.,,./res/multimedia.wav,./res/multimedia.mp4
-4,computer,n,An electronic device for storing and processing data.,,,
-5,programming,n,The process of writing computer programs.,,,
-6,language,n,The method of human communication.,,,
-7,education,n,The process of receiving or giving systematic instruction.,,,
-8,instructor,n,A person who teaches something.,,,
-9,student,n,A person who is studying at a school or college.,,,
-10,university,n,An educational institution for higher learning.,,,
+ID,Main Word,IPA,Part Of Speech,Group,Chinese Translation,Chinese Transliteration,Sentence,Image URL,Audio URL
+1,Blue,/bluː/,Noun/Adjective,Primary,蓝色,Lánsè,The sky is blue.,res/the-sky-is-blue.jpg,blue.mp3
+2,Yellow,/ˈjɛloʊ/,Noun/Adjective,Primary,黄色,Huángsè,The sun is yellow.,res/the-sun-is-yellow.jpg,yellow.mp3
+3,Red,/rɛd/,Noun/Adjective,Primary,红色,Hóngsè,Roses are red.,res/roses-are-red.jpg,red.mp3
+4,Green,/ɡriːn/,Noun/Adjective,Secondary,绿色,Lǜsè,The leaves are green.,res/the-leaves-are-green.jpg,green.mp3
+5,Purple,/ˈpɜːrpl/,Noun/Adjective,Secondary,紫色,Zǐsè,The lavender is purple.,res/the-lavender-is-purple.jpg,purple.mp3
+6,Orange,/ˈɔːrɪndʒ/,Noun/Adjective,Secondary,橙色,Chéngsè,Oranges are orange.,res/oranges-are-orange.jpg,orange.mp3
+7,Brown,/braʊn/,Noun/Adjective,Neutral,棕色,Zōngsè,The chocolate is brown.,res/the-chocolate-is-brown.jpg,brown.mp3
+8,Black,/blæk/,Noun/Adjective,Neutral,黑色,Hēisè,The night is black.,res/the-night-is-black.jpg,black.mp3
+9,White,/waɪt/,Noun/Adjective,Neutral,白色,Báisè,The snow is white.,res/the-snow-is-white.jpg,white.mp3
+10,Gray,/ɡreɪ/,Noun/Adjective,Neutral,灰色,Huīsè,The sky is gray today.,res/the-sky-is-gray-today.jpg,gray.mp3
+11,Beige,/beɪʒ/,Noun/Adjective,Neutral,米色,Mǐsè,The wall is beige.,res/the-wall-is-beige.jpg,beige.mp3
+12,Ivory,/ˈaɪvəri/,Noun/Adjective,Neutral,象牙色,Xiàngyásè,The piano keys are ivory.,res/the-piano-keys-are-ivory.jpg,ivory.mp3
+13,Almond,/ˈɑːmənd/,Noun/Adjective,Neutral,杏色,Xìngsè,The almond tree blossoms are light brown.,res/the-almond-tree-blossoms-are-light-brown.jpg,almond.mp3
+14,Sky,/skaɪ/,Noun/Adjective,Pastel,天空色,Tiānkōngsè,The dress is sky blue.,res/the-dress-is-sky-blue.jpg,sky.mp3
+15,Aqua,/ˈækwə/,Noun/Adjective,Pastel,水绿色,Shuǐlǜsè,The pool is aqua.,res/the-pool-is-aqua.jpg,aqua.mp3
+16,Blush,/blʌʃ/,Noun/Adjective,Pastel,腮红色,Sāihóngsè,She wore a blush pink dress.,res/she-wore-a-blush-pink-dress.jpg,blush.mp3
+17,Cream,/kriːm/,Noun/Adjective,Pastel,奶油色,Nǎiyóusè,The walls are cream-colored.,res/the-walls-are-cream-colored.jpg,cream.mp3
+18,Taupe,/toʊp/,Noun/Adjective,Neutral,坦普色,Tǎnpúsè,The sofa is taupe.,res/the-sofa-is-taupe.jpg,taupe.mp3
+19,Rosewood,/ˈroʊzˌwʊd/,Noun/Adjective,Neutral,玫瑰木色,Méiguì mùsè,The furniture is rosewood.,res/the-furniture-is-rosewood.jpg,rosewood.mp3
+20,Lilac,/ˈlaɪlək/,Noun/Adjective,Pastel,紫丁香色,Zǐdīngxiāngsè,The lilac flowers bloom in spring.,res/the-lilac-flowers-bloom-in-spring.jpg,lilac.mp3
+21,Pink,/pɪŋk/,Noun/Adjective,Pastel,粉色,Fěnsè,The pink balloon floated away.,res/the-pink-balloon-floated-away.jpg,pink.mp3
+22,Mint,/mɪnt/,Noun/Adjective,Pastel,薄荷色,Bòhé sè,The mint ice cream is refreshing.,res/the-mint-ice-cream-is-refreshing.jpg,mint.mp3
+23,Peach,/piːtʃ/,Noun/Adjective,Pastel,桃色,Táosè,The sunset is peach-colored.,res/the-sunset-is-peach-colored.jpg,peach.mp3
+24,Lavender,/ˈlævəndər/,Noun/Adjective,Pastel,薰衣草色,Xūn yī cǎo sè,The lavender fields are beautiful.,res/the-lavender-fields-are-beautiful.jpg,lavender.mp3
+25,Coral,/ˈkɒrəl/,Noun/Adjective,Pastel,珊瑚色,Shānhú sè,The coral necklace is pretty.,res/the-coral-necklace-is-pretty.jpg,coral.mp3
+26,Rose,/roʊz/,Noun/Adjective,Pastel,玫瑰色,Méiguì sè,The rose is red.,res/the-rose-is-red.jpg,rose.mp3
+27,Salmon,/ˈsæmən/,Noun/Adjective,Pastel,三文鱼色,Sānwényú sè,The salmon shirt looks great.,res/the-salmon-shirt-looks-great.jpg,salmon.mp3
+28,Plum,/plʌm/,Noun/Adjective,Pastel,李子色,Lǐzǐ sè,The plum dress is elegant.,res/the-plum-dress-is-elegant.jpg,plum.mp3
+29,Apricot,/ˈeɪprɪkɒt/,Noun/Adjective,Pastel,杏色,Xìngsè,The apricot fruit is sweet.,res/the-apricot-fruit-is-sweet.jpg,apricot.mp3
+30,Lime,/laɪm/,Noun/Adjective,Pastel,酸橙色,Suānchéng sè,The lime is sour.,res/the-lime-is-sour.jpg,lime.mp3
