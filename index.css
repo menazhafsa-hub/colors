@@ -150,6 +150,14 @@ main {
 #heading {
 	color: #002a44;
 	line-height: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.logo {
+	font-size: 1.5rem;
+	line-height: 1;
 }
 
 #toggle-entries {
@@ -229,7 +237,7 @@ main {
 }
 
 .overdue-date {
-	color: #d9534f;
+	color: #100f0f;
 	font-weight: bold;
 }
 
@@ -240,6 +248,11 @@ main {
 	height: 100%;
 	position: relative;
 	perspective: 60rem;
+	max-height: 32rem;
+	aspect-ratio: 16 / 9;
+	justify-self: center;
+	max-width: 70rem;
+	width: 100%;
 }
 
 #card-inner {
@@ -257,12 +270,14 @@ main {
 .card-face {
 	position: absolute;
 	inset: 0;
+	width: 100%;
+	height: 100%;
 	backface-visibility: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 2rem;
-	background-color: #fefefe;
+	background-color: transparent;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: 150%;
 	border-radius: 1rem;
@@ -278,61 +293,307 @@ main {
 /* You can alter colours, fonts, sizing, or layout for .card-front and .card-back below. */
 
 /* Styles for the front side of the card. */
-.card-background {
-	color: #d20000;
+.card-front {
+	color: #020000;
+	border: 0.75rem solid transparent;
+	border-radius: 1rem;
+	outline: 0.375rem solid rgba(0, 0, 0, 0.25);
+	outline-offset: 0.25rem;
+	border-image: radial-gradient(
+		circle at 0.75rem 0.75rem,
+		#ffffff 0 0.08rem,
+		transparent 0.09rem
+	) 8;
+	border-image-source: radial-gradient(
+		circle at 0.75rem 0.75rem,
+		#ffffff 0 0.08rem,
+		transparent 0.09rem
+	),
+	radial-gradient(circle at 0.75rem 0.45rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+	radial-gradient(circle at 0.75rem 1.05rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+	radial-gradient(circle at 0.45rem 0.75rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+	radial-gradient(circle at 1.05rem 0.75rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem);
 	/* Additional styles here (e.g., background-color: #bbccdd;) */
 }
 
+.color-blue {
+	background-color: #3b82f6;
+}
+
+.color-yellow {
+	background-color: #facc15;
+}
+
+.color-red {
+	background-color: #ef4444;
+}
+
+.color-green {
+	background-color: #22c55e;
+}
+
+.color-purple {
+	background-color: #a855f7;
+}
+
+.color-orange {
+	background-color: #f97316;
+}
+
+.color-brown {
+	background-color: #8b5e3c;
+}
+
+.color-black {
+	background-color: #111827;
+}
+
+.color-white {
+	background-color: #f8fafc;
+}
+
+.color-gray {
+	background-color: #9ca3af;
+}
+
+.color-beige {
+	background-color: #f5f1da;
+}
+
+.color-ivory {
+	background-color: #fff9e6;
+}
+
+.color-almond {
+	background-color: #efdfc8;
+}
+
+.color-sky {
+	background-color: #7dd3fc;
+}
+
+.color-aqua {
+	background-color: #22d3ee;
+}
+
+.color-blush {
+	background-color: #fbcfe8;
+}
+
+.color-cream {
+	background-color: #fff4d6;
+}
+
+.color-taupe {
+	background-color: #a58a7f;
+}
+
+.color-rosewood {
+	background-color: #8b4a5a;
+}
+
+.color-lilac {
+	background-color: #c4b5fd;
+}
+
+.color-pink {
+	background-color: #f9a8d4;
+}
+
+.color-mint {
+	background-color: #a7f3d0;
+}
+
+.color-peach {
+	background-color: #f7b7a3;
+}
+
+.color-lavender {
+	background-color: #e9d5ff;
+}
+
+.color-coral {
+	background-color: #fb7185;
+}
+
+.color-rose {
+	background-color: #f43f5e;
+}
+
+.color-salmon {
+	background-color: #fda4af;
+}
+
+.color-plum {
+	background-color: #7c3aed;
+}
+
+.color-apricot {
+	background-color: #f9c27b;
+}
+
+.color-lime {
+	background-color: #a3e635;
+}
+
 /* Add styles for additional elements on the front side here. Here is an example: */
+
+#image-url {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.75rem;
+	border: 0.25rem solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
 
 /* Styles for the back side of the card. */
 .card-back {
 	transform: rotateY(180deg);
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 0.5rem;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+	grid-template-rows: 1fr;
+	gap: 1rem;
+	position: relative;
+	background-image:
+		radial-gradient(circle at 0.75rem 0.75rem, #ffffff 0 0.08rem, transparent 0.09rem),
+		radial-gradient(circle at 0.75rem 0.45rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+		radial-gradient(circle at 0.75rem 1.05rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+		radial-gradient(circle at 0.45rem 0.75rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem),
+		radial-gradient(circle at 1.05rem 0.75rem, var(--stripe-color, rgba(0, 0, 0, 0.2)) 0 0.12rem, transparent 0.13rem);
+	background-size: 1.5rem 1.5rem;
 	/* Additional styles here (e.g., background-color: #bbddcc;) */
 }
 
 /* Add styles for additional elements on the back side here. Here are some examples: */
 
-#card-back-pos {
-	padding: 1px 3px;
-	color: hsl(0, 0%, 98%);
-	border: 1px solid #777;
-	border-radius: 2px;
-	font-size: 90%;
+#part-of-speech {
+	padding: 0.0625rem 0.1875rem;
+	color: hsl(0, 100%, 1%);
+	border-radius: 0.125rem;
+	font-size: 50%;
 }
 
-#card-back-word {
-	font-size: 300%;
-    color: #d20000;       
+#part-of-speech::before,
+#part-of-speech::after,
+#group::before,
+#group::after {
+	color: inherit;
 }
 
-#card-back-audio {
+#part-of-speech::before,
+#group::before {
+	content: "[";
+}
+
+#part-of-speech::after,
+#group::after {
+	content: "]";
+}
+
+#group {
+	font-size: 80%;
+}
+
+#ipa {
+	font-size: 100%;
+}
+
+.card-back-content {
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-rows: auto auto auto auto 1fr;
+	gap: 0.5rem;
+	align-content: start;
+	justify-items: start;
+	text-align: left;
+	background-color: #ffffff;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	border: 0.25rem solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
 }
 
-#card-back-Chinese-translation {
-	font-size: 200%;
-    color: #a60505;  
+.card-back-title {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-#card-back-Chinese-transliteration {
+.card-back-pos {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	align-items: flex-start;
+}
+
+.card-back-meta,
+.card-back-translation {
+	display: flex;
+	gap: 0.5rem;
+	align-items: baseline;
+}
+
+#id {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	font-size: 80%;
+	font-weight: 700;
+	min-width: 1.75rem;
+	min-height: 1.75rem;
+	padding: 0.25rem;
+	background-color: #ffffff;
+	border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+	border-radius: 0.25rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#main-word {
+	font-size: 250%;
+	color: var(--stripe-color, #000000f4);
+	background-color: #ffffff;
+	padding: 0.25rem 0.75rem;
+	border-radius: 0.5rem;
+	border: 0.0625rem solid #000000;
+	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#audio-url {
+	width: 0.75rem;
+	height: 0.75rem;
+	font-size: 50%;
+	border-radius: 999px;
+}
+
+#chinese-translation {
 	font-size: 150%;
-    color: #cf1919;  
+	color: #0f0101;
 }
 
-#card-back-example-sentence {
-	font-size: 200%;
-    color: #0f0d0d;  
+#chinese-transliteration {
+	font-size: 100%;
+	color: #080000;
 }
 
-#card-back-video {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
+#sentence {
+	font-size: 150%;
+	color: #0f0d0d;
+	text-decoration: underline;
+}
+
+#sentence::before {
+	content: "\"";
+}
+
+#sentence::after {
+	content: "\"";
 }
 
 /* STUDENTS: End of recommended modifications */
@@ -357,7 +618,7 @@ main {
 }
 
 .btn-pagination {
-	background-color: #ddf5ff;
+	background-color: #b4e2f6;
 }
 
 .btn-pagination:hover {
@@ -371,7 +632,7 @@ main {
 
 /* Styles the progress buttons with different background colours to make them stand out. */
 #btn-again {
-	background-color: #ffcccc;
+	background-color: #e8e0e0;
 }
 
 #btn-good {

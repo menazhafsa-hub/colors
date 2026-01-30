@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Vanilla Flashcard App Template</title>
+		<title>Color Flashcards</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<!-- The font used for the flashcard app. You can change this to any other font. -->
@@ -16,7 +16,8 @@
 			<!-- The heading includes a button to show/hide all flashcard entries. -->
 			<h1 id="heading">
 				<button id="toggle-entries" title="Show All Entries">|||</button>
-				Vanilla Flashcard App Template
+				<span class="logo" aria-hidden="true">🌈</span>
+				Color Flashcards
 			</h1>
 			<!-- A list of all cards for quick access -->
 			<div id="entries" class="transition-fade transition-slide-from-left transition-slide-from-top" hidden>
@@ -26,7 +27,7 @@
 							<tr>
 								<th>ID</th>
 								<th>Word</th>
-								<th>Due Date</th>
+								<th>Progress</th>
 							</tr>
 						</thead>
 						<tbody id="entries-body"></tbody>
@@ -39,20 +40,28 @@
 					<!-- STUDENTS: Start of recommended modifications -->
 					<!-- Add and rearrange HTML elements inside .card-front and .card-back below. -->
 					<div class="card-face card-front">
-						<img id="card-front-image" />
 					</div>
 					<div class="card-face card-back">
-						<img id="card-back-image" />
-						<h2 id="card-back-word"></h2>
-						<h2 id="card-back-ipa"></h2>
-						<p>
-							<span id="card-back-pos"></span>
-							<span id="card-back-group"></span>
-						</p>
-						<audio id="card-back-audio" controls></audio>
-						<span id="card-back-Chinese-translation"></span>
-						<span id="card-back-Chinese-transliteration"></span>
-						<span id="card-back-example-sentence"></span>
+						<span id="id"></span>
+						<div class="card-back-content">
+							<div class="card-back-title">
+								<h2 id="main-word"></h2>
+								<div class="card-back-pos">
+									<span id="part-of-speech"></span>
+									<audio id="audio-url" controls></audio>
+								</div>
+							</div>
+							<div class="card-back-meta">
+								<span id="ipa"></span>
+								<span id="group"></span>
+							</div>
+							<div class="card-back-translation">
+								<span id="chinese-translation"></span>
+								<span id="chinese-transliteration"></span>
+							</div>
+							<span id="sentence"></span>
+						</div>
+						<img id="image-url" alt="" />
 					<!-- Remove the above attributes as needed. -->
 					</div>
 					<!-- STUDENTS: End of recommended modifications -->
