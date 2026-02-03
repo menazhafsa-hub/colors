@@ -442,11 +442,13 @@ main {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	border-radius: 0.75rem;
 	border: 0.25rem solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+	align-self: center;
 }
 
 /* Styles for the back side of the card. */
@@ -467,13 +469,21 @@ main {
 	/* Additional styles here (e.g., background-color: #bbddcc;) */
 }
 
+.card-back.color-white #main-word {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
 /* Add styles for additional elements on the back side here. Here are some examples: */
 
 #part-of-speech {
 	padding: 0.0625rem 0.1875rem;
 	color: hsl(0, 100%, 1%);
 	border-radius: 0.125rem;
-	font-size: 50%;
+	font-size: 85%;
 }
 
 #part-of-speech::before,
@@ -532,10 +542,15 @@ main {
 }
 
 .card-back-meta,
-.card-back-translation {
+.card-back-translation,
+.card-back-sentence {
 	display: flex;
 	gap: 0.5rem;
 	align-items: baseline;
+}
+
+.card-back-sentence {
+	align-items: center;
 }
 
 #id {
@@ -557,7 +572,7 @@ main {
 
 #main-word {
 	font-size: 250%;
-	color: var(--stripe-color, #000000f4);
+	color: var(--main-word-color, var(--stripe-color, #000000f4));
 	background-color: #ffffff;
 	padding: 0.25rem 0.75rem;
 	border-radius: 0.5rem;
@@ -566,10 +581,18 @@ main {
 }
 
 #audio-url {
-	width: 0.75rem;
-	height: 0.75rem;
-	font-size: 50%;
-	border-radius: 999px;
+	appearance: none;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	line-height: 1;
+	padding: 0;
+	transition: transform 0.1s;
+}
+
+#audio-url:active {
+	transform: scale(0.9);
 }
 
 #chinese-translation {

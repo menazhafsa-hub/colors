@@ -1,31 +1,31 @@
-ID,Main Word,IPA,Part Of Speech,Group,Chinese Translation,Chinese Transliteration,Sentence,Image URL,Audio URL
-1,Blue,/bluː/,N/adj,Primary color,蓝色,Lánsè,The sky is blue.,res/the-sky-is-blue.jpg,blue.mp3
-2,Yellow,/ˈjɛloʊ/,N/adj,Primary color,黄色,Huángsè,The sun is yellow.,res/the-sun-is-yellow.jpg,yellow.mp3
-3,Red,/rɛd/,N/adj,Primary color,红色,Hóngsè,Roses are red.,res/roses-are-red.jpg,red.mp3
-4,Green,/ɡriːn/,N/adj,Secondary color,绿色,Lǜsè,The leaves are green.,res/the-leaves-are-green.jpg,green.mp3
-5,Purple,/ˈpɜːrpl/,N/adj,Secondary color,紫色,Zǐsè,The lavender is purple.,res/the-lavender-is-purple.jpg,purple.mp3
-6,Orange,/ˈɔːrɪndʒ/,N/adj,Secondary color,橙色,Chéngsè,Oranges are orange.,res/oranges-are-orange.jpg,orange.mp3
-7,Brown,/braʊn/,N/adj,Neutral color,棕色,Zōngsè,The chocolate is brown.,res/the-chocolate-is-brown.jpg,brown.mp3
-8,Black,/blæk/,N/adj,Neutral color,黑色,Hēisè,The night is black.,res/the-night-is-black.jpg,black.mp3
-9,White,/waɪt/,N/adj,Neutral color,白色,Báisè,The snow is white.,res/the-snow-is-white.jpg,white.mp3
-10,Gray,/ɡreɪ/,N/adj,Neutral color,灰色,Huīsè,The sky is gray today.,res/the-sky-is-gray-today.jpg,gray.mp3
-11,Beige,/beɪʒ/,N/adj,Neutral color,米色,Mǐsè,The wall is beige.,res/the-wall-is-beige.jpg,beige.mp3
-12,Ivory,/ˈaɪvəri/,N/adj,Neutral color,象牙色,Xiàngyásè,The piano keys are ivory.,res/the-piano-keys-are-ivory.jpg,ivory.mp3
-13,Almond,/ˈɑːmənd/,N/adj,Neutral color,杏色,Xìngsè,The almond tree blossoms are light brown.,res/the-almond-tree-blossoms-are-light-brown.jpg,almond.mp3
-14,Sky,/skaɪ/,N/adj,Pastel color,天空色,Tiānkōngsè,The dress is sky blue.,res/the-dress-is-sky-blue.jpg,sky.mp3
-15,Aqua,/ˈækwə/,N/adj,Pastel color,水绿色,Shuǐlǜsè,The pool is aqua.,res/the-pool-is-aqua.jpg,aqua.mp3
-16,Blush,/blʌʃ/,N/adj,Pastel color,腮红色,Sāihóngsè,She wore a blush pink dress.,res/she-wore-a-blush-pink-dress.jpg,blush.mp3
-17,Cream,/kriːm/,N/adj,Pastel color,奶油色,Nǎiyóusè,The walls are cream-colored.,res/the-walls-are-cream-colored.jpg,cream.mp3
-18,Taupe,/toʊp/,N/adj,Neutral color,坦普色,Tǎnpúsè,The sofa is taupe.,res/the-sofa-is-taupe.jpg,taupe.mp3
-19,Rosewood,/ˈroʊzˌwʊd/,N/adj,Neutral color,玫瑰木色,Méiguì mùsè,The furniture is rosewood.,res/the-furniture-is-rosewood.jpg,rosewood.mp3
-20,Lilac,/ˈlaɪlək/,N/adj,Pastel color,紫丁香色,Zǐdīngxiāngsè,The lilac flowers bloom in spring.,res/the-lilac-flowers-bloom-in-spring.jpg,lilac.mp3
-21,Pink,/pɪŋk/,N/adj,Pastel color,粉色,Fěnsè,The pink balloon floated away.,res/the-pink-balloon-floated-away.jpg,pink.mp3
-22,Mint,/mɪnt/,N/adj,Pastel color,薄荷色,Bòhé sè,The mint ice cream is refreshing.,res/the-mint-ice-cream-is-refreshing.jpg,mint.mp3
-23,Peach,/piːtʃ/,N/adj,Pastel color,桃色,Táosè,The sunset is peach-colored.,res/the-sunset-is-peach-colored.jpg,peach.mp3
-24,Lavender,/ˈlævəndər/,N/adj,Pastel color,薰衣草色,Xūn yī cǎo sè,The lavender fields are beautiful.,res/the-lavender-fields-are-beautiful.jpg,lavender.mp3
-25,Coral,/ˈkɒrəl/,N/adj,Pastel color,珊瑚色,Shānhú sè,The coral necklace is pretty.,res/the-coral-necklace-is-pretty.jpg,coral.mp3
-26,Rose,/roʊz/,N/adj,Pastel color,玫瑰色,Méiguì sè,The rose is red.,res/the-rose-is-red.jpg,rose.mp3
-27,Salmon,/ˈsæmən/,N/adj,Pastel color,三文鱼色,Sānwényú sè,The salmon shirt looks great.,res/the-salmon-shirt-looks-great.jpg,salmon.mp3
-28,Plum,/plʌm/,N/adj,Pastel color,李子色,Lǐzǐ sè,The plum dress is elegant.,res/the-plum-dress-is-elegant.jpg,plum.mp3
-29,Apricot,/ˈeɪprɪkɒt/,N/adj,Pastel color,杏色,Xìngsè,The apricot fruit is sweet.,res/the-apricot-fruit-is-sweet.jpg,apricot.mp3
-30,Lime,/laɪm/,N/adj,Pastel color,酸橙色,Suānchéng sè,The lime is sour.,res/the-lime-is-sour.jpg,lime.mp3
+ID,Main Word,IPA,Part Of Speech,Group,Chinese Translation,Chinese Transliteration,Sentence
+1,Blue,/bluː/,N/adj,Primary color,蓝色,Lánsè,The sky is blue.
+2,Yellow,/ˈjɛloʊ/,N/adj,Primary color,黄色,Huángsè,The sun is yellow.
+3,Red,/rɛd/,N/adj,Primary color,红色,Hóngsè,Roses are red.
+4,Green,/ɡriːn/,N/adj,Secondary color,绿色,Lǜsè,The leaves are green.
+5,Purple,/ˈpɜːrpl/,N/adj,Secondary color,紫色,Zǐsè,The lavender is purple.
+6,Orange,/ˈɔːrɪndʒ/,N/adj,Secondary color,橙色,Chéngsè,Oranges are orange.
+7,Brown,/braʊn/,N/adj,Neutral color,棕色,Zōngsè,The chocolate is brown.
+8,Black,/blæk/,N/adj,Neutral color,黑色,Hēisè,The night is black.
+9,White,/waɪt/,N/adj,Neutral color,白色,Báisè,The snow is white.
+10,Gray,/ɡreɪ/,N/adj,Neutral color,灰色,Huīsè,The sky is gray today.
+11,Beige,/beɪʒ/,N/adj,Neutral color,米色,Mǐsè,The wall is beige.
+12,Ivory,/ˈaɪvəri/,N/adj,Neutral color,象牙色,Xiàngyásè,The piano keys are ivory.
+13,Almond,/ˈɑːmənd/,N/adj,Neutral color,杏色,Xìngsè,The almond is light brown.
+14,Sky,/skaɪ/,N/adj,Pastel color,天空色,Tiānkōngsè,The dress is sky blue.
+15,Aqua,/ˈækwə/,N/adj,Pastel color,水绿色,Shuǐlǜsè,The pool is aqua.
+16,Blush,/blʌʃ/,N/adj,Pastel color,腮红色,Sāihóngsè,She wore a blush pink dress.
+17,Cream,/kriːm/,N/adj,Pastel color,奶油色,Nǎiyóusè,The heels are in cream color.
+18,Taupe,/toʊp/,N/adj,Neutral color,坦普色,Tǎnpúsè,The sofa is taupe.
+19,Rosewood,/ˈroʊzˌwʊd/,N/adj,Neutral color,玫瑰木色,Méiguì mùsè,The furniture is rosewood.
+20,Lilac,/ˈlaɪlək/,N/adj,Pastel color,紫丁香色,Zǐdīngxiāngsè,The lilac flowers bloom in spring.
+21,Pink,/pɪŋk/,N/adj,Pastel color,粉色,Fěnsè,The pink balloon floated away.
+22,Mint,/mɪnt/,N/adj,Pastel color,薄荷色,Bòhé sè,The mint ice cream is refreshing.
+23,Peach,/piːtʃ/,N/adj,Pastel color,桃色,Táosè,The sunset is peach-colored.
+24,Lavender,/ˈlævəndər/,N/adj,Pastel color,薰衣草色,Xūn yī cǎo sè,The lavender fields are beautiful.
+25,Coral,/ˈkɒrəl/,N/adj,Pastel color,珊瑚色,Shānhú sè,The coral necklace is pretty.
+26,Rose,/roʊz/,N/adj,Pastel color,玫瑰色,Méiguì sè,The the ring is rose-colored.
+27,Salmon,/ˈsæmən/,N/adj,Pastel color,三文鱼色,Sānwényú sè,The salmon shirt looks great.
+28,Plum,/plʌm/,N/adj,Pastel color,李子色,Lǐzǐ sè,The plum dress is elegant.
+29,Apricot,/ˈeɪprɪkɒt/,N/adj,Pastel color,杏色,Xìngsè,The apricot fruit is sweet.
+30,Lime,/laɪm/,N/adj,Pastel color,酸橙色,Suānchéng sè,The lime is sour.

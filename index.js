@@ -12,8 +12,6 @@ const columnNames = {
 	chineseTranslation: "Chinese Translation",
 	chineseTransliteration: "Chinese Transliteration",
 	sentence: "Sentence",
-	imageUrl: "Image URL",
-	audioUrl: "Audio URL",
 };
 
 function resolveResourceUrl(urlValue) {
@@ -223,9 +221,23 @@ function setFrontColorClass(mainWord) {
 		}
 	}
 
+	for (const className of Array.from(cardBack.classList)) {
+		if (className.startsWith("color-")) {
+			cardBack.classList.remove(className);
+		}
+	}
+
 	const colorKey = mainWord?.toString().toLowerCase().replaceAll(" ", "-");
 	if (colorKey) {
 		cardFront.classList.add(`color-${colorKey}`);
+		cardBack.classList.add(`color-${colorKey}`);
+	}
+
+	const mainColor = stripeColors[colorKey];
+	if (mainColor) {
+		cardBack.style.setProperty("--main-word-color", mainColor);
+	} else {
+		cardBack.style.removeProperty("--main-word-color");
 	}
 
 	const stripeColor = getStripeColor(colorKey);
@@ -244,9 +256,8 @@ function renderCard() {
 
 	// Update the front side with the current card's word and image
 	const currentCard = cards[currentIndex];
-	const imageUrl = resolveResourceUrl(currentCard[columnNames.imageUrl]);
-	const audioUrl = resolveResourceUrl(currentCard[columnNames.audioUrl]);
 	const mainWord = currentCard[columnNames.mainWord];
+	const imageUrl = `res/Image/${mainWord.trim()}.jpg`;
 
 	document.getElementById("image-url").src = imageUrl;
 	setFrontColorClass(mainWord);
@@ -261,12 +272,40 @@ function renderCard() {
 		document.getElementById("chinese-translation").textContent = currentCard[columnNames.chineseTranslation];
 		document.getElementById("chinese-transliteration").textContent = currentCard[columnNames.chineseTransliteration];
 		document.getElementById("sentence").textContent = currentCard[columnNames.sentence];
-		document.getElementById("audio-url").src = audioUrl;
 	}, transitionHalfDuration);
 	// STUDENTS: End of recommended modifications
 
 	updateEntries();
 }
+
+function speakSentence(event) {
+	event.stopPropagation();
+	const currentCard = cards[currentIndex];
+	const sentence = currentCard[columnNames.sentence];
+	if (!sentence) {
+		return;
+	}
+
+	const utterance = new SpeechSynthesisUtterance(sentence);
+	utterance.lang = "en-US";
+	
+	const voices = speechSynthesis.getVoices();
+	const femaleVoice = voices.find(voice => 
+		voice.name.includes("Female") || 
+		voice.name.includes("Samantha") || 
+		voice.name.includes("Victoria") || 
+		voice.name.includes("Zira") ||
+		voice.name.includes("Google US English")
+	);
+	
+	if (femaleVoice) {
+		utterance.voice = femaleVoice;
+	}
+	
+	speechSynthesis.speak(utterance);
+}
+
+document.getElementById("audio-url").addEventListener("click", speakSentence);
 
 // Toggle the entries list when the hamburger button in the heading is clicked
 document.getElementById("toggle-entries").addEventListener("click", () => {
